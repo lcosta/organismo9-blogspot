@@ -378,8 +378,8 @@ h2.date-header {
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js'/>
 <script src='http://github.com/lcosta/organismo9-blogspot/raw/master /js/jquery.scrollTo-1.4.2-min.js'/> 
 
-<link href='http://github.com/lcosta/organismo9-blogspot/raw/master/icon/favicon_O9_cinzabold.ico' rel='shortcut icon'/>
-<link href='http://github.com/lcosta/organismo9-blogspot/raw/master/icon/favicon_O9_cinzabold.ico' rel='icon' type='image/ico'/>
+<link href='http://github.com/lcosta/organismo9-blogspot/raw/master/icon/favicon.ico' rel='shortcut icon'/>
+<link href='http://github.com/lcosta/organismo9-blogspot/raw/master/icon/favicon.ico' rel='icon' type='image/ico'/>
 
   </head>
 
@@ -907,6 +907,19 @@ h2.date-header {
   <b:include name='quickedit'/>
 </b:includable>
 </b:widget>
+<b:widget id='Text4' locked='false' title='contato' type='Text'>
+<b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
 <b:widget id='Slideshow2' locked='false' title='' type='Slideshow'>
 <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -937,6 +950,19 @@ h2.date-header {
 </b:includable>
 </b:widget>
 <b:widget id='HTML2' locked='false' title='' type='HTML'>
+<b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
+<b:widget id='HTML4' locked='false' title='Twitter' type='HTML'>
 <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -1002,19 +1028,6 @@ h2.date-header {
    </ul>
    <b:include name='quickedit'/>
  </div>
-</b:includable>
-</b:widget>
-<b:widget id='Text4' locked='false' title='contato' type='Text'>
-<b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
 </b:includable>
 </b:widget>
 <b:widget id='Followers1' locked='false' title='Seguidores' type='Followers'>
@@ -1205,5 +1218,14 @@ h2.date-header {
     </div>
 
   </div></div> <!-- end outer-wrapper -->
+<script type='text/javascript'>
+var gaJsHost = ((&quot;https:&quot; == document.location.protocol) ? &quot;https://ssl.&quot; : &quot;http://www.&quot;);
+document.write(unescape(&quot;%3Cscript src=&#39;&quot; + gaJsHost + &quot;google-analytics.com/ga.js&#39; type=&#39;text/javascript&#39;%3E%3C/script%3E&quot;));
+</script>
+<script type='text/javascript'>
+try {
+var pageTracker = _gat._getTracker(&quot;UA-184442-14&quot;);
+pageTracker._trackPageview();
+} catch(err) {}</script>
 </body>
 </html>
